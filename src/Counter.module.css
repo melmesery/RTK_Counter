@@ -1,0 +1,47 @@
+.counter {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.operations {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.operation {
+  width: 150px;
+  padding: 10px;
+  background: #f0f0f0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.operation:hover {
+  transform: scale(0.9);
+}
+
+.result {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.toggle {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px;
+  border: none !important;
+}
