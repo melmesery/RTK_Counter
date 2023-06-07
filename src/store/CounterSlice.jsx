@@ -5,14 +5,14 @@ export const counterSlice = createSlice({
   initialState: { value: 0 },
   reducers: {
     plus: (state, action) => {
-      state.value += 1;
+      state.value += action.payload;
     },
     minus: (state, action) => {
-      state.value -= 1;
+      state.value -= action.payload;
     },
   },
 });
 
-export const { plus, state } = counterSlice.actions;
+export const { plus, minus } = counterSlice.actions;
 
 export default counterSlice.reducer;

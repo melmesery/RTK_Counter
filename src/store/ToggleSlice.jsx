@@ -2,9 +2,11 @@ import { createSlice } from "@reduxjs/toolkit";
 
 export const toggleSlice = createSlice({
   name: "toggle",
-  initialState: { toggle: false },
+  initialState: { replace: false },
   reducers: {
-    switchToggle: (state, action) => {},
+    switchToggle: (state) => {
+      state.replace = !state.replace;
+    },
   },
 });
 
